@@ -15,6 +15,7 @@
 		4D6388411C667A2700169131 /* HackAtBrownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6388401C667A2700169131 /* HackAtBrownTests.swift */; };
 		4D63884C1C667A2700169131 /* HackAtBrownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63884B1C667A2700169131 /* HackAtBrownUITests.swift */; };
 		BAD995B61C667CF20081ACFC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BAD995B51C667CF20081ACFC /* README.md */; };
+		BAD995B81C66816C0081ACFC /* 7ef3540c-5366-4b47-8265-c279cfc60d12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAD995B71C66816C0081ACFC /* 7ef3540c-5366-4b47-8265-c279cfc60d12.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4D63884B1C667A2700169131 /* HackAtBrownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackAtBrownUITests.swift; sourceTree = "<group>"; };
 		4D63884D1C667A2700169131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAD995B51C667CF20081ACFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BAD995B71C66816C0081ACFC /* 7ef3540c-5366-4b47-8265-c279cfc60d12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "7ef3540c-5366-4b47-8265-c279cfc60d12.jpg"; path = "../../../Desktop/7ef3540c-5366-4b47-8265-c279cfc60d12.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				4D63882B1C667A2700169131 /* AppDelegate.swift */,
 				4D63882D1C667A2700169131 /* ViewController.swift */,
 				4D63882F1C667A2700169131 /* Main.storyboard */,
+				BAD995B71C66816C0081ACFC /* 7ef3540c-5366-4b47-8265-c279cfc60d12.jpg */,
 				4D6388321C667A2700169131 /* Assets.xcassets */,
 				4D6388341C667A2700169131 /* LaunchScreen.storyboard */,
 				4D6388371C667A2700169131 /* Info.plist */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD995B81C66816C0081ACFC /* 7ef3540c-5366-4b47-8265-c279cfc60d12.jpg in Resources */,
 				4D6388361C667A2700169131 /* LaunchScreen.storyboard in Resources */,
 				4D6388331C667A2700169131 /* Assets.xcassets in Resources */,
 				4D6388311C667A2700169131 /* Main.storyboard in Resources */,
