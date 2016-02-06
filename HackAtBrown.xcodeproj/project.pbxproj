@@ -14,6 +14,7 @@
 		4D6388361C667A2700169131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6388341C667A2700169131 /* LaunchScreen.storyboard */; };
 		4D6388411C667A2700169131 /* HackAtBrownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6388401C667A2700169131 /* HackAtBrownTests.swift */; };
 		4D63884C1C667A2700169131 /* HackAtBrownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63884B1C667A2700169131 /* HackAtBrownUITests.swift */; };
+		BAD995B61C667CF20081ACFC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BAD995B51C667CF20081ACFC /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4D6388471C667A2700169131 /* HackAtBrownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackAtBrownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D63884B1C667A2700169131 /* HackAtBrownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackAtBrownUITests.swift; sourceTree = "<group>"; };
 		4D63884D1C667A2700169131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD995B51C667CF20081ACFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				4D63883F1C667A2700169131 /* HackAtBrownTests */,
 				4D63884A1C667A2700169131 /* HackAtBrownUITests */,
 				4D6388291C667A2700169131 /* Products */,
+				BAD995B51C667CF20081ACFC /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD995B61C667CF20081ACFC /* README.md in Sources */,
 				4D63882E1C667A2700169131 /* ViewController.swift in Sources */,
 				4D63882C1C667A2700169131 /* AppDelegate.swift in Sources */,
 			);
@@ -482,6 +486,7 @@
 				4D6388521C667A2700169131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D6388531C667A2700169131 /* Build configuration list for PBXNativeTarget "HackAtBrownTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				4D6388551C667A2700169131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D6388561C667A2700169131 /* Build configuration list for PBXNativeTarget "HackAtBrownUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				4D6388581C667A2700169131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
