@@ -20,6 +20,7 @@
 		BAAC684E1C67019100EC9B97 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAC684D1C67019000EC9B97 /* ListViewController.swift */; };
 		BAAC68501C6708FF00EC9B97 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAC684F1C6708FF00EC9B97 /* TableViewController.swift */; };
 		BAAC68521C67331900EC9B97 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAC68511C67331900EC9B97 /* User.swift */; };
+		BAAC68541C679B8F00EC9B97 /* FamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAC68531C679B8E00EC9B97 /* FamilyViewController.swift */; };
 		BAEA4CB81C668CB20077895F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA4CB71C668CB20077895F /* AppDelegate.swift */; };
 		BAEA4CBA1C668CB20077895F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA4CB91C668CB20077895F /* ViewController.swift */; };
 		BAEA4CBD1C668CB20077895F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEA4CBB1C668CB20077895F /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 		BAAC684D1C67019000EC9B97 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		BAAC684F1C6708FF00EC9B97 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		BAAC68511C67331900EC9B97 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BAAC68531C679B8E00EC9B97 /* FamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyViewController.swift; sourceTree = "<group>"; };
 		BAEA4CB21C668CB20077895F /* seeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEA4CB61C668CB20077895F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAEA4CB71C668CB20077895F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		BAEA4CA91C668CB20077895F = {
 			isa = PBXGroup;
 			children = (
+				BAAC68531C679B8E00EC9B97 /* FamilyViewController.swift */,
 				BAAC68471C66E5AE00EC9B97 /* ProfileViewController.swift */,
 				BAAC68511C67331900EC9B97 /* User.swift */,
 				BAEA4CD91C66B01F0077895F /* SignUpViewController.swift */,
@@ -291,6 +294,7 @@
 				BAAC68501C6708FF00EC9B97 /* TableViewController.swift in Sources */,
 				BAEA4CDA1C66B0200077895F /* SignUpViewController.swift in Sources */,
 				BAAC684C1C66F0E000EC9B97 /* ConnectionsViewController.swift in Sources */,
+				BAAC68541C679B8F00EC9B97 /* FamilyViewController.swift in Sources */,
 				BAAC684E1C67019100EC9B97 /* ListViewController.swift in Sources */,
 				BAAC68481C66E5AE00EC9B97 /* ProfileViewController.swift in Sources */,
 				BAAC68461C66CF7900EC9B97 /* AddFamilyViewController.swift in Sources */,

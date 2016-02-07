@@ -7,14 +7,36 @@
 //
 
 import UIKit
+import Firebase
 
 class TableViewController: UITableViewController {
     
-    let names = ["Rachel", "Sam"]
+   // let names = ["Rachel", "Sam"]
+    var names : [String] = []
+    let user = User.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var profileUserName = self.user.profileUserName
+        
+        var url = "https://boiling-inferno-2905.firebaseio.com/userName"
+        let ref = Firebase(url: url)
+        let userRef = ref.childByAppendingPath(profileUserName)
+        userRef.observeSingleEventOfType(.Value, withBlock: {snapshot in
+            let obj = snapshot.value["connections"]
+            if(obj != nil){
+                if let dict = obj as? Dictionary<String, AnyObject> {
+                    var i = 0
+                    for (k,v) in dict{
+                        var val = v as Dictionary<String,String>
+                        self.names.append(val["username"]!)
+                    }
+                }
+                
+            }
+            
+        })
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

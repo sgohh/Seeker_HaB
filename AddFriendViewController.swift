@@ -38,8 +38,8 @@ class AddFriendViewController: UIViewController {
 //            self.usernames.append((snapshot.value.objectForKey("friends")) as String)})
 //
             
-        var newUser = [profileUserName: profileUserName]
-        var newUser2 = [newFriend: newFriend]
+        var newUser = ["username": profileUserName]
+        var newUser2 = ["username" : newFriend]
         
         ref.childByAppendingPath(newFriend).childByAppendingPath("connections").childByAutoId().setValue(newUser)
         ref.childByAppendingPath(profileUserName).childByAppendingPath("friends").childByAutoId().setValue(newUser2)

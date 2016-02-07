@@ -70,10 +70,10 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         let ref = Firebase(url: url)
         var newUser = ["name": name, "phone number": phone, "password": mypassword]
         ref.childByAppendingPath(username).setValue(newUser)
-        
-        let userRef = ref.childByAppendingPath("itsaftermidnight")
-        userRef.observeSingleEventOfType(.Value, withBlock: {snapshot in
-                print(snapshot.value.objectForKey("name"))})
+//        
+//        let userRef = ref.childByAppendingPath("itsaftermidnight")
+//        userRef.observeSingleEventOfType(.Value, withBlock: {snapshot in
+//                print(snapshot.value.objectForKey("name"))})
     //}
     }
         

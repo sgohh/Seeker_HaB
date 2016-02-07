@@ -219,30 +219,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaK-pd-aNZ">
-                                <rect key="frame" x="81" y="240" width="52" height="30"/>
-                                <state key="normal" title="Friend5">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noun_26016_cc" translatesAutoresizingMaskIntoConstraints="NO" id="hUR-FD-B7f">
                                 <rect key="frame" x="68" y="173" width="59" height="59"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noun_26016_cc" translatesAutoresizingMaskIntoConstraints="NO" id="JaI-zh-tf0">
                                 <rect key="frame" x="212" y="287" width="59" height="59"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjw-Jl-pSx">
-                                <rect key="frame" x="157" y="173" width="52" height="30"/>
-                                <state key="normal" title="Friend1">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyA-3O-81U">
-                                <rect key="frame" x="247" y="240" width="52" height="30"/>
-                                <state key="normal" title="Friend2">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noun_26016_cc" translatesAutoresizingMaskIntoConstraints="NO" id="8LB-UA-p12">
                                 <rect key="frame" x="91" y="287" width="59" height="59"/>
                             </imageView>
@@ -252,7 +234,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noun_26016_cc" translatesAutoresizingMaskIntoConstraints="NO" id="w3G-R0-3XF">
                                 <rect key="frame" x="240" y="177" width="59" height="59"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rxy-MR-cMb">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxy-MR-cMb">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
                                     <navigationItem id="qGg-QT-bhP">
@@ -268,22 +250,40 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoF-fg-SHP">
-                                <rect key="frame" x="103" y="354" width="52" height="30"/>
-                                <state key="normal" title="Friend4">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrV-g4-tEk">
-                                <rect key="frame" x="219" y="354" width="52" height="30"/>
-                                <state key="normal" title="Friend3">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="                      " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKC-L3-GFc">
                                 <rect key="frame" x="0.0" y="438" width="322" height="145"/>
                                 <color key="backgroundColor" red="1" green="0.37987509400000002" blue="0.2602344821" alpha="0.73999999999999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="912-DB-nyx">
+                                <rect key="frame" x="162" y="173" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T52-pK-emj">
+                                <rect key="frame" x="246" y="240" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOg-Hz-fap">
+                                <rect key="frame" x="100" y="352" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend 5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4g-uT-dFE">
+                                <rect key="frame" x="75" y="240" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Z3-MO-Jps">
+                                <rect key="frame" x="221" y="352" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -308,11 +308,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="friend1" destination="qjw-Jl-pSx" id="wpk-D3-mea"/>
-                        <outlet property="friend2" destination="ZyA-3O-81U" id="9JB-01-Qe6"/>
-                        <outlet property="friend3" destination="IrV-g4-tEk" id="sHS-Jq-o0d"/>
-                        <outlet property="friend4" destination="EoF-fg-SHP" id="Rlm-cv-gVN"/>
-                        <outlet property="friend5" destination="FaK-pd-aNZ" id="FD5-xR-wxM"/>
+                        <outlet property="friend1" destination="912-DB-nyx" id="0mB-JB-vXf"/>
+                        <outlet property="friend2" destination="T52-pK-emj" id="Zwz-3W-6fi"/>
+                        <outlet property="friend3" destination="1Z3-MO-Jps" id="WxL-IL-4ih"/>
+                        <outlet property="friend4" destination="mOg-Hz-fap" id="DGQ-fS-Xih"/>
+                        <outlet property="friend5" destination="K4g-uT-dFE" id="WNu-qC-ra8"/>
                         <outlet property="taylor2" destination="69v-fV-fPD" id="Bir-JW-0n6"/>
                         <outlet property="taylor3" destination="w3G-R0-3XF" id="gq6-ff-NFR"/>
                         <outlet property="taylor4" destination="JaI-zh-tf0" id="rrn-KC-SWH"/>
@@ -608,7 +608,7 @@
         <!--Family-->
         <scene sceneID="toc-Fs-gnh">
             <objects>
-                <viewController id="FQJ-Dw-vLi" sceneMemberID="viewController">
+                <viewController id="FQJ-Dw-vLi" customClass="FamilyViewController" customModule="seeker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kfc-rJ-WcR"/>
                         <viewControllerLayoutGuide type="bottom" id="lTy-tZ-0JY"/>
@@ -617,47 +617,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYa-V5-bDG">
-                                <rect key="frame" x="82" y="239" width="56" height="30"/>
-                                <state key="normal" title="Family5">
-                                    <color key="titleColor" red="1" green="0.37987509400000002" blue="0.2602344821" alpha="0.73999999999999999" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noun_26016_cc" translatesAutoresizingMaskIntoConstraints="NO" id="kGz-qG-ahc">
                                 <rect key="frame" x="73" y="172" width="59" height="59"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noun_26016_cc" translatesAutoresizingMaskIntoConstraints="NO" id="OJC-cq-GG6">
                                 <rect key="frame" x="217" y="286" width="59" height="59"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRU-mZ-69E">
-                                <rect key="frame" x="162" y="172" width="60" height="30"/>
-                                <state key="normal" title="Family1">
-                                    <color key="titleColor" red="1" green="0.37987509400000002" blue="0.2602344821" alpha="0.73999999999999999" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOk-mu-Rrx">
-                                <rect key="frame" x="245" y="239" width="59" height="30"/>
-                                <state key="normal" title="Family2">
-                                    <color key="titleColor" red="1" green="0.37987509400000002" blue="0.2602344821" alpha="0.73999999999999999" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fns-Hx-48j">
-                                <rect key="frame" x="100" y="353" width="60" height="30"/>
-                                <state key="normal" title="Family4">
-                                    <color key="titleColor" red="1" green="0.37987509400000002" blue="0.2602344821" alpha="0.73999999999999999" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkL-t5-Rha">
-                                <rect key="frame" x="216" y="353" width="60" height="30"/>
-                                <state key="normal" title="Family3">
-                                    <color key="titleColor" red="1" green="0.37987509400000002" blue="0.2602344821" alpha="0.73999999999999999" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noun_26016_cc" translatesAutoresizingMaskIntoConstraints="NO" id="HhB-l2-yUL">
                                 <rect key="frame" x="96" y="286" width="59" height="59"/>
                             </imageView>
@@ -676,7 +641,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fvl-xd-kUl">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fvl-xd-kUl">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
                                     <navigationItem id="FdM-vg-Hc5">
@@ -688,6 +653,36 @@
                                 <rect key="frame" x="-15" y="424" width="363" height="144"/>
                                 <color key="backgroundColor" red="0.32886760253754538" green="0.72113533569582389" blue="0.94300063775510201" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Family 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKo-L9-sTV">
+                                <rect key="frame" x="253" y="235" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Family 5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RB0-DH-UP9">
+                                <rect key="frame" x="81" y="235" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Family 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0D-IM-nw2">
+                                <rect key="frame" x="104" y="353" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Family 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MT8-wp-iEB">
+                                <rect key="frame" x="225" y="353" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Family 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjm-U7-3xN">
+                                <rect key="frame" x="165" y="172" width="47" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -711,6 +706,18 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="label1" destination="Wjm-U7-3xN" id="9Bu-61-fsx"/>
+                        <outlet property="label2" destination="mKo-L9-sTV" id="Mqf-ce-sLA"/>
+                        <outlet property="label3" destination="MT8-wp-iEB" id="BMe-ss-djb"/>
+                        <outlet property="label4" destination="h0D-IM-nw2" id="upK-b1-fJ8"/>
+                        <outlet property="label5" destination="RB0-DH-UP9" id="87J-7b-qLw"/>
+                        <outlet property="taylor2" destination="RfZ-IL-pBx" id="i1z-Ks-4WE"/>
+                        <outlet property="taylor3" destination="OJC-cq-GG6" id="ksn-iX-ACI"/>
+                        <outlet property="taylor4" destination="HhB-l2-yUL" id="pgk-tt-b3O"/>
+                        <outlet property="taylor5" destination="kGz-qG-ahc" id="5qI-ir-gLz"/>
+                        <outlet property="taylorImageView" destination="9Wg-oE-UQB" id="d63-37-yes"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0lh-E6-m2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
