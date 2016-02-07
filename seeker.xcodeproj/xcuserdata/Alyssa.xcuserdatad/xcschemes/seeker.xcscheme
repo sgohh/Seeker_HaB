@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D6388271C667A2700169131"
-               BuildableName = "HackAtBrown.app"
-               BlueprintName = "HackAtBrown"
-               ReferencedContainer = "container:HackAtBrown.xcodeproj">
+               BlueprintIdentifier = "BAEA4CB11C668CB20077895F"
+               BuildableName = "seeker.app"
+               BlueprintName = "seeker"
+               ReferencedContainer = "container:seeker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,24 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D63883B1C667A2700169131"
-               BuildableName = "HackAtBrownTests.xctest"
-               BlueprintName = "HackAtBrownTests"
-               ReferencedContainer = "container:HackAtBrown.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D6388461C667A2700169131"
-               BuildableName = "HackAtBrownUITests.xctest"
-               BlueprintName = "HackAtBrownUITests"
-               ReferencedContainer = "container:HackAtBrown.xcodeproj">
+               BlueprintIdentifier = "BAEA4CC61C668CB20077895F"
+               BuildableName = "seekerTests.xctest"
+               BlueprintName = "seekerTests"
+               ReferencedContainer = "container:seeker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -60,30 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D63883B1C667A2700169131"
-               BuildableName = "HackAtBrownTests.xctest"
-               BlueprintName = "HackAtBrownTests"
-               ReferencedContainer = "container:HackAtBrown.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D6388461C667A2700169131"
-               BuildableName = "HackAtBrownUITests.xctest"
-               BlueprintName = "HackAtBrownUITests"
-               ReferencedContainer = "container:HackAtBrown.xcodeproj">
+               BlueprintIdentifier = "BAEA4CC61C668CB20077895F"
+               BuildableName = "seekerTests.xctest"
+               BlueprintName = "seekerTests"
+               ReferencedContainer = "container:seeker.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4D6388271C667A2700169131"
-            BuildableName = "HackAtBrown.app"
-            BlueprintName = "HackAtBrown"
-            ReferencedContainer = "container:HackAtBrown.xcodeproj">
+            BlueprintIdentifier = "BAEA4CB11C668CB20077895F"
+            BuildableName = "seeker.app"
+            BlueprintName = "seeker"
+            ReferencedContainer = "container:seeker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -100,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4D6388271C667A2700169131"
-            BuildableName = "HackAtBrown.app"
-            BlueprintName = "HackAtBrown"
-            ReferencedContainer = "container:HackAtBrown.xcodeproj">
+            BlueprintIdentifier = "BAEA4CB11C668CB20077895F"
+            BuildableName = "seeker.app"
+            BlueprintName = "seeker"
+            ReferencedContainer = "container:seeker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -119,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4D6388271C667A2700169131"
-            BuildableName = "HackAtBrown.app"
-            BlueprintName = "HackAtBrown"
-            ReferencedContainer = "container:HackAtBrown.xcodeproj">
+            BlueprintIdentifier = "BAEA4CB11C668CB20077895F"
+            BuildableName = "seeker.app"
+            BlueprintName = "seeker"
+            ReferencedContainer = "container:seeker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

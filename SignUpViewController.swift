@@ -42,8 +42,16 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         var password = passwordTextField.text
         var phone = phoneTextField.text
         var username = usernameTextField.text
-        var name = nameTextField.text 
+        var name = nameTextField.text
         
+        let url = NSURL(string: "https://boiling-inferno-2905.firebaseio.com/" + username + ".json")
+        let request = NSMutableURLRequest(URL:url!)
+        request.HTTPMethod = "PUT"
+        let postString = "name=" + name + "&phoneNumber=" + phone + "&password=" + password
+        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request)
+        
+        task.resume()
     }
 
     override func didReceiveMemoryWarning() {
