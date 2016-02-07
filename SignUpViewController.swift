@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
 
@@ -39,19 +40,15 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func submit(sender: AnyObject) {
-        var password = passwordTextField.text
+        var mypassword = passwordTextField.text
         var phone = phoneTextField.text
         var username = usernameTextField.text
         var name = nameTextField.text
         
-        let url = NSURL(string: "https://boiling-inferno-2905.firebaseio.com/" + username + ".json")
-        let request = NSMutableURLRequest(URL:url!)
-        request.HTTPMethod = "PUT"
-        let postString = "name=" + name + "&phoneNumber=" + phone + "&password=" + password
-        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request)
-        
-        task.resume()
+        let ref = Firebase(url:  "https://boiling-inferno-2905.firebaseio.com/")
+        var newUser = ["name": name, "phone number": phone, "password": mypassword]
+        ref.childByAppendingPath(username).setValue(newUser)
+  
     }
 
     override func didReceiveMemoryWarning() {
