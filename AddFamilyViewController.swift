@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
 class AddFamilyViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
+    let user = User.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +20,18 @@ class AddFamilyViewController: UIViewController {
     }
 
     @IBAction func SeekFam(sender: AnyObject) {
-        var newFam = username.text 
+        var newFam = username.text
+        var profileUserName: String = self.user.profileUserName!
+        
+        var url = "https://boiling-inferno-2905.firebaseio.com/userName"
+        
+        let ref = Firebase(url: url)
+        var newUser = ["connections": profileUserName]
+        ref.childByAppendingPath(newFam + "/connections").setValue(newUser)
+        
+        var newUser2 = ["family": newFam]
+        ref.childByAppendingPath(profileUserName + "/family").setValue(newUser2)
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

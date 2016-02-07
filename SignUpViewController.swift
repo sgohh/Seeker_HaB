@@ -21,7 +21,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var submitButton: UIButton!
     
-    
+    let user = User.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +43,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         var mypassword = passwordTextField.text
         var phone = phoneTextField.text
         var username = usernameTextField.text
+        self.user.profileUserName = username
         var name = nameTextField.text
         
         var url = "https://boiling-inferno-2905.firebaseio.com/userName"

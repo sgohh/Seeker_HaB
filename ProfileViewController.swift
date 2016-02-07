@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+         changeImage(taylorImageView)
 
         // Do any additional setup after loading the view.
     }
@@ -29,7 +30,16 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func changeImage(newImage: UIImageView){
+        newImage.layer.masksToBounds = false
+        newImage.layer.cornerRadius = newImage.frame.size.height/2
+        newImage.contentMode = UIViewContentMode.ScaleAspectFill
+        newImage.clipsToBounds = true
+        
+    }
+    
     @IBOutlet weak var taylorImageView: UIImageView!
+   
     
 
     /*

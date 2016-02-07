@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import Firebase
+
+
 
 class AddFriendViewController: UIViewController {
 
     @IBOutlet weak var username: UITextField!
+    let user = User.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +24,18 @@ class AddFriendViewController: UIViewController {
 
     @IBAction func SeekNewFriend(sender: AnyObject) {
         var newFriend = username.text
+        var profileUserName: String = self.user.profileUserName!
+        
+        var url = "https://boiling-inferno-2905.firebaseio.com/userName"
+        
+        let ref = Firebase(url: url)
+        var newUser = ["connections": profileUserName]
+        ref.childByAppendingPath(newFriend + "/connections").setValue(newUser)
+        
+        var newUser2 = ["friends": newFriend]
+        ref.childByAppendingPath(profileUserName + "/friends").setValue(newUser2)
+
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
