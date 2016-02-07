@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAAC68461C66CF7900EC9B97 /* AddFamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAC68451C66CF7900EC9B97 /* AddFamilyViewController.swift */; };
 		BAEA4CB81C668CB20077895F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA4CB71C668CB20077895F /* AppDelegate.swift */; };
 		BAEA4CBA1C668CB20077895F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA4CB91C668CB20077895F /* ViewController.swift */; };
 		BAEA4CBD1C668CB20077895F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEA4CBB1C668CB20077895F /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		BAEA4CCE1C668CB20077895F /* seekerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA4CCD1C668CB20077895F /* seekerTests.swift */; };
 		BAEA4CD81C66978B0077895F /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA4CD71C66978B0077895F /* FriendsViewController.swift */; };
 		BAEA4CDA1C66B0200077895F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA4CD91C66B01F0077895F /* SignUpViewController.swift */; };
+		BAEA4CDC1C66CAB50077895F /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA4CDB1C66CAB50077895F /* AddFriendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BAAC68451C66CF7900EC9B97 /* AddFamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFamilyViewController.swift; sourceTree = "<group>"; };
 		BAEA4CB21C668CB20077895F /* seeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEA4CB61C668CB20077895F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAEA4CB71C668CB20077895F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		BAEA4CCD1C668CB20077895F /* seekerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seekerTests.swift; sourceTree = "<group>"; };
 		BAEA4CD71C66978B0077895F /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		BAEA4CD91C66B01F0077895F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BAEA4CDB1C66CAB50077895F /* AddFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				BAEA4CD91C66B01F0077895F /* SignUpViewController.swift */,
+				BAEA4CDB1C66CAB50077895F /* AddFriendViewController.swift */,
+				BAAC68451C66CF7900EC9B97 /* AddFamilyViewController.swift */,
 				BAEA4CD71C66978B0077895F /* FriendsViewController.swift */,
 				BAEA4CB41C668CB20077895F /* seeker */,
 				BAEA4CCA1C668CB20077895F /* seekerTests */,
@@ -220,7 +226,9 @@
 			files = (
 				BAEA4CBA1C668CB20077895F /* ViewController.swift in Sources */,
 				BAEA4CD81C66978B0077895F /* FriendsViewController.swift in Sources */,
+				BAEA4CDC1C66CAB50077895F /* AddFriendViewController.swift in Sources */,
 				BAEA4CDA1C66B0200077895F /* SignUpViewController.swift in Sources */,
+				BAAC68461C66CF7900EC9B97 /* AddFamilyViewController.swift in Sources */,
 				BAEA4CB81C668CB20077895F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +421,7 @@
 				BAEA4CD31C668CB20077895F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAEA4CD41C668CB20077895F /* Build configuration list for PBXNativeTarget "seekerTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +430,7 @@
 				BAEA4CD61C668CB20077895F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
