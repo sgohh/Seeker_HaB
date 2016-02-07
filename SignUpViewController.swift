@@ -45,11 +45,21 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         var username = usernameTextField.text
         var name = nameTextField.text
         
-        let ref = Firebase(url:  "https://boiling-inferno-2905.firebaseio.com/")
+        var url = "https://boiling-inferno-2905.firebaseio.com/userName"
+        
+        let ref = Firebase(url: url)
         var newUser = ["name": name, "phone number": phone, "password": mypassword]
         ref.childByAppendingPath(username).setValue(newUser)
-  
+        
+        let userRef = ref.childByAppendingPath("itsaftermidnight")
+        userRef.observeSingleEventOfType(.Value, withBlock: {snapshot in
+                print(snapshot.value.objectForKey("name"))
+        })
+
+        
     }
+        
+        
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
