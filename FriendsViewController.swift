@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FriendsViewController: UIViewController {
+class FriendsViewController: UIViewController, UINavigationBarDelegate {
 
     @IBOutlet weak var taylorImageView: UIImageView!
     @IBOutlet weak var taylor2: UIImageView!
@@ -36,6 +36,7 @@ class FriendsViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+          self.title = "Friends"
         // Dispose of any resources that can be recreated.
     }
     
