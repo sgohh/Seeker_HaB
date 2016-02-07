@@ -11,6 +11,7 @@ import Firebase
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var traid: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     
     @IBOutlet weak var phoneTextField: UITextField!
@@ -21,12 +22,17 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var submitButton: UIButton!
     
+    @IBOutlet weak var aid: UILabel!
     let user = User.sharedInstance
+    @IBOutlet weak var bottom: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         passwordTextField.delegate = self
         // Do any additional setup after loading the view.
+      //  traid.textColor = UIColor(red: 0.698, green: 0.07, blue: 0.208, alpha: 1.0)
+        aid.textColor = UIColor(red: 0.129, green: 0.604, blue: 0.8, alpha: 1.0)
+        bottom.backgroundColor = UIColor(red: 0.129, green: 0.604, blue: 0.8, alpha: 1.0)
     }
     
    // MARK: UITextFieldDelegate
@@ -39,7 +45,20 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.text = textField.text
     }
     
+    
+    
     @IBAction func submit(sender: AnyObject) {
+        // TRY TO CHANGE TEXT BORDER COLOR ??
+//        let myColor: UIColor = UIColor(red: 0.5, green: 0.5, blue: 0, alpha: 1)
+//        if (nameTextField.text == "")  {
+//            //|| (phoneTextField.text = nil) || (usernameTextField.text = nil) || (passwordTextField.text = nil) {
+//            //nameTextField.layer.borderColor = myColor.CGColor
+//            let border = CALayer()
+//            
+//            border.borderColor = UIColor.redColor().CGColor
+//        } else {
+        
+        
         var mypassword = passwordTextField.text
         var phone = phoneTextField.text
         var username = usernameTextField.text
@@ -54,10 +73,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         
         let userRef = ref.childByAppendingPath("itsaftermidnight")
         userRef.observeSingleEventOfType(.Value, withBlock: {snapshot in
-                print(snapshot.value.objectForKey("name"))
-        })
-
-        
+                print(snapshot.value.objectForKey("name"))})
+    //}
     }
         
         
