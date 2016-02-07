@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  HackAtBrown
+//  HackAtBrownmsim
 //
 //  Created by Samantha Gohh on 2/6/16.
 //  Copyright © 2016 Samantha. All rights reserved.
