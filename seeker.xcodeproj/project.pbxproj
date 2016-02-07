@@ -27,6 +27,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		298DB0941C66C74E00969316 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BAEA4CB21C668CB20077895F /* seeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEA4CB61C668CB20077895F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,6 +141,7 @@
 				BAEA4CAE1C668CB20077895F /* Sources */,
 				BAEA4CAF1C668CB20077895F /* Frameworks */,
 				BAEA4CB01C668CB20077895F /* Resources */,
+				298DB0941C66C74E00969316 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,6 +358,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Alamofire/build/Debug",
+					"$(PROJECT_DIR)/Alamofire/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/seeker-emzlzkodynyifmgrhevdlpowjeil/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = seeker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +375,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Alamofire/build/Debug",
+					"$(PROJECT_DIR)/Alamofire/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/seeker-emzlzkodynyifmgrhevdlpowjeil/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = seeker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +441,7 @@
 				BAEA4CD31C668CB20077895F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAEA4CD41C668CB20077895F /* Build configuration list for PBXNativeTarget "seekerTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +450,7 @@
 				BAEA4CD61C668CB20077895F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
