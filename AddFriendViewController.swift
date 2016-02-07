@@ -16,6 +16,9 @@ class AddFriendViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
     let user = User.sharedInstance
     
+    // NEW
+    var usernames: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,17 +26,23 @@ class AddFriendViewController: UIViewController {
     }
 
     @IBAction func SeekNewFriend(sender: AnyObject) {
+
         var newFriend = username.text
         var profileUserName: String = self.user.profileUserName!
         
         var url = "https://boiling-inferno-2905.firebaseio.com/userName"
-        
         let ref = Firebase(url: url)
-        var newUser = ["connections": profileUserName]
-        ref.childByAppendingPath(newFriend + "/connections").setValue(newUser)
         
-        var newUser2 = ["friends": newFriend]
-        ref.childByAppendingPath(profileUserName + "/friends").setValue(newUser2)
+        //testing this
+//        ref.observeEventType(.ChildAdded, withBlock: {snapshot in
+//            self.usernames.append((snapshot.value.objectForKey("friends")) as String)})
+//
+            
+        var newUser = [profileUserName: profileUserName]
+        var newUser2 = [newFriend: newFriend]
+        
+        ref.childByAppendingPath(newFriend).childByAppendingPath("connections").childByAutoId().setValue(newUser)
+        ref.childByAppendingPath(profileUserName).childByAppendingPath("friends").childByAutoId().setValue(newUser2)
 
         
     }

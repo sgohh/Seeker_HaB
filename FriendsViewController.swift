@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class FriendsViewController: UIViewController, UINavigationBarDelegate {
 
@@ -15,6 +16,14 @@ class FriendsViewController: UIViewController, UINavigationBarDelegate {
     @IBOutlet weak var taylor3: UIImageView!
     @IBOutlet weak var taylor4: UIImageView!
     @IBOutlet weak var taylor5: UIImageView!
+    
+    @IBOutlet weak var friend1: UIButton!
+    @IBOutlet weak var friend2: UIButton!
+    @IBOutlet weak var friend3: UIButton!
+    @IBOutlet weak var friend4: UIButton!
+    @IBOutlet weak var friend5: UIButton!
+    
+    let user = User.sharedInstance
     
     func changeImage(newImage: UIImageView){
         newImage.layer.masksToBounds = false
@@ -31,7 +40,22 @@ class FriendsViewController: UIViewController, UINavigationBarDelegate {
         changeImage(taylor3)
         changeImage(taylor4)
         changeImage(taylor5)
+        
+        var profileUserName = self.user.profileUserName
+        
         // Do any additional setup after loading the view.
+        var url = "https://boiling-inferno-2905.firebaseio.com/userName"
+        let ref = Firebase(url: url)
+        let userRef = ref.childByAppendingPath(profileUserName)
+        userRef.observeSingleEventOfType(.Value, withBlock: {snapshot in
+            if(snapshot.value.objectForKey("friends") != nil){
+                let dict = snapshot.value.objectForKey("friends")! 
+     
+                for var i = 0; i < dict.count; i++ {
+                    print(dict[i])
+                }
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {

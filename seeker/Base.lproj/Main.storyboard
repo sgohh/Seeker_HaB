@@ -308,6 +308,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="friend1" destination="qjw-Jl-pSx" id="wpk-D3-mea"/>
+                        <outlet property="friend2" destination="ZyA-3O-81U" id="9JB-01-Qe6"/>
+                        <outlet property="friend3" destination="IrV-g4-tEk" id="sHS-Jq-o0d"/>
+                        <outlet property="friend4" destination="EoF-fg-SHP" id="Rlm-cv-gVN"/>
+                        <outlet property="friend5" destination="FaK-pd-aNZ" id="FD5-xR-wxM"/>
                         <outlet property="taylor2" destination="69v-fV-fPD" id="Bir-JW-0n6"/>
                         <outlet property="taylor3" destination="w3G-R0-3XF" id="gq6-ff-NFR"/>
                         <outlet property="taylor4" destination="JaI-zh-tf0" id="rrn-KC-SWH"/>
@@ -570,7 +575,11 @@
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-4"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" title="Messaging" id="fAI-A0-oM0">
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="XQT-BR-z6S"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="XQT-BR-z6S">
+                            <connections>
+                                <segue destination="xJ1-Wo-T9W" kind="push" id="8hk-ct-Hu0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="800"/>
@@ -707,6 +716,45 @@
             </objects>
             <point key="canvasLocation" x="1463" y="1061"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="yzE-yT-ZNh">
+            <objects>
+                <viewController id="xJ1-Wo-T9W" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JlS-YB-g4B"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uke-Tx-Hrf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cfN-Wk-DxE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="search your connections" translatesAutoresizingMaskIntoConstraints="NO" id="sah-oE-NL5">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Message" translatesAutoresizingMaskIntoConstraints="NO" id="yoT-cZ-Diu">
+                                <rect key="frame" x="0.0" y="521" width="320" height="84"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sah-oE-NL5" firstAttribute="top" secondItem="JlS-YB-g4B" secondAttribute="bottom" id="051-WW-ll3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yoT-cZ-Diu" secondAttribute="trailing" constant="-23" id="OsS-JK-umi"/>
+                            <constraint firstItem="sah-oE-NL5" firstAttribute="leading" secondItem="cfN-Wk-DxE" secondAttribute="leadingMargin" constant="-16" id="QpY-Ek-T6S"/>
+                            <constraint firstItem="yoT-cZ-Diu" firstAttribute="leading" secondItem="cfN-Wk-DxE" secondAttribute="leadingMargin" constant="-9" id="fwi-Zf-FTs"/>
+                            <constraint firstItem="yoT-cZ-Diu" firstAttribute="top" secondItem="JlS-YB-g4B" secondAttribute="bottom" constant="457" id="z5s-3T-x3V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sah-oE-NL5" secondAttribute="trailing" constant="-16" id="zNo-Rq-sye"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xg3-AG-np6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kYJ-cF-7N3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1400" y="1884"/>
+        </scene>
         <!--Add Family View Controller-->
         <scene sceneID="F52-CM-uA7">
             <objects>
@@ -722,7 +770,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xQA-wA-kkn">
                                 <rect key="frame" x="41" y="241" width="238" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter a username " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVE-ID-C6z">
                                 <rect key="frame" x="27" y="212" width="267" height="21"/>
@@ -767,7 +815,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="qgU-RO-H34"/>
-        <segue reference="g1j-1q-CYl"/>
+        <segue reference="R1i-an-DKg"/>
+        <segue reference="HUb-5b-hn5"/>
     </inferredMetricsTieBreakers>
 </document>
